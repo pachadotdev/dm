@@ -8,7 +8,7 @@ financial_db_con <- function() {
   err_dbedu <- tryCatch(return(dbedu_con()), error = identity)
 
   abort(paste0(
-    "Can't connect to relational.fit.cvut.cz or db-edu.pacha.dev:\n",
+    "Can't connect to relational.fit.cvut.cz or databases.pacha.dev:\n",
     conditionMessage(err_relational), "\n",
     conditionMessage(err_dbedu)
   ))
