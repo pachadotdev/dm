@@ -26,7 +26,7 @@ relational_con <- function() {
 
 dbedu_con <- function() {
   DBI::dbConnect(
-    RMariaDB::MariaDB(),
+    RPostgres::Postgres(),
     username = "student",
     password = "uQCy30sNP5arqMBGHVLZ",
     dbname = "financial",
